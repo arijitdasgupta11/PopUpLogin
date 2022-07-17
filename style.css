@@ -1,0 +1,279 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+#abc {
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    background-color: #313131;
+    overflow: auto
+}
+
+img#close {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    cursor: pointer;
+}
+
+div#popupContact {
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    margin-left: -202px;
+    font-family: 'Raleway', sans-serif
+}
+
+form {
+    max-width: 300px;
+    min-width: 250px;
+    padding: 10px 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: raleway;
+    background-color: #fff
+}
+
+p {
+    margin-top: 30px
+}
+
+h2 {
+    background-color: #FEFFED;
+    padding: 20px 35px;
+    margin: -10px -50px;
+    text-align: center;
+    border-radius: 10px 10px 0 0
+}
+
+hr {
+    margin: 10px -50px;
+    border: 0;
+    border-top: 1px solid #ccc
+}
+
+input {
+    width: 82%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-family: raleway
+}
+
+#enterotp {
+    margin: 30px auto 8px auto;
+    text-align: center;
+}
+
+#name {
+    background-image: url('https://i.postimg.cc/GhxS5kb1/n.jpg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 5px;
+    background-position: 5px left;
+}
+
+#email {
+    background-image: url('https://i.postimg.cc/8PS04yQH/e.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 7px;
+    background-position: 5px left;
+}
+
+
+
+#abc form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+#abc a span {
+    position: absolute;
+    display: block;
+}
+
+#abc a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+#abc a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#abc a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+#abc a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+#abc a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 0px #03e9f4,
+        0 0 0px #11f1fc,
+        0 0 15px #19e5ef,
+        0 0 8px #0ee4ef;
+}
+
+
+
+.otp {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.otp input {
+    width: 20px;
+    font-size: 24px;
+    margin: 2px;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: 2px solid #27212d;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.otp input:hover {
+    border: 2px solid #a527ff;
+    box-shadow: 0 0 4px 4px #a527ff61;
+}
+
+.spacing {
+    margin-right: 1rem !important;
+}
+
+#submit {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #1dbaf8;
+    color: #fff;
+    border: 1px solid #1dbaf8;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+span {
+    color: red;
+    font-weight: 700
+}
+
+#submit {
+    border-radius: 15px;
+}
+
+#submit:hover {
+    background-color: #1fabe3;
+    border-radius: 15px;
+}
+
+button {
+    width: 10%;
+    height: 45px;
+    border-radius: 15px;
+    border-color: white;
+    background-color: #1dbaf8;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #1cabe3;
+    border-radius: 15px;
+}

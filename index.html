@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup Login Form</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body id="body" style="overflow:hidden;">
+    <div id="abc">
+        <div id="popupContact">
+            <form action="#" id="form" method="post" name="form">
+                <img id="close"
+                    src="https://cdn-icons.flaticon.com/png/512/3375/premium/3375533.png?token=exp=1658051601~hmac=75c8555b8949fb03bc015cf23e37e70d"
+                    onclick="div_hide()">
+                <h2>Sign In</h2>
+                <hr>
+                <input id="name" name="name" placeholder="Enter your Phone no." type="tel" pattern="[0-9]{10}" required>
+                <input id="email" name="email" placeholder="Email id" type="email">
+                <p id="enterotp">Enter your OTP here</p>
+                <div class="otp">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <a href="#" onclick="div_send()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Send
+                </a>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="pop">
+        <button id="popup" onclick="div_show()">Login</button>
+    </div>
+</body>
+
+</html>
